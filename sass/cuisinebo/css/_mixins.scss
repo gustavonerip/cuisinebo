@@ -1,0 +1,49 @@
+@mixin primary-btn{
+    width: fit-content;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    border: solid 1px $second-color;
+    outline: none;
+    background: transparent;
+    color: $second-color;
+    font-size: $font-size;
+    letter-spacing: 1px;
+    font-family: $first-font;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+
+    transition: all .3s ease;
+
+    &:hover{
+        background: $second-color;
+        color: $black;
+        letter-spacing: 2px;
+        transform: scale(1.1);
+    }
+}
+
+@mixin secondary-btn{
+    width: fit-content;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    border: 0;
+    outline: none;
+    background: $black;
+    color: $first-color;
+    font-size: $font-size;
+    letter-spacing: 1px;
+    font-family: $first-font;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+
+    transition: all .3s ease;
+
+    &:hover{
+        background: $second-color;
+        color: $first-color;
+        letter-spacing: 2px;
+        transform: scale(1.1);
+    }
+}
